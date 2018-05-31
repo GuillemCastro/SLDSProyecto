@@ -1,5 +1,6 @@
 \documentclass[numfooter]{beamer}
     \usepackage[utf8]{inputenc}
+    \usepackage[spanish]{babel}
     \usepackage{xcolor}
     \usetheme[secheader]{Boadilla}
     
@@ -91,6 +92,17 @@
         \includegraphics[width=0.9\textwidth]{images/solucion.png}
         \vfill
         Patrón Mediador-Observador orientado a Eventos
+    \end{frame}
+    \begin{frame}
+        \frametitle{Caja negra}
+        \begin{itemize}
+            \item Guardamos todos los eventos producidos en el sistema empaquetados
+            \item Escritura \textit{raw} en una memoria microSD en formato FAT32
+            \item \textit{Double buffering} con buffers de 512 bytes (tamaño de sector)
+            \vfill
+            \centering
+            \includegraphics{images/packet.png}
+        \end{itemize}
     \end{frame}
     \begin{frame}
         \frametitle{Problemas surgidos}
